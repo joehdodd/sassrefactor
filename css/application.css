@@ -412,10 +412,6 @@ template {
       Base Imports
 ==========================
 ---- */
-/*
-@import 'variables';
-@import 'mixins';
-*/
 /* ----
 ==========================
       Base Styles
@@ -470,6 +466,10 @@ img {
   font-weight: 900;
   margin: 5px 15px;
   text-transform: uppercase; }
+  @media (min-width: 768px) {
+    .main-nav li {
+      display: inline-block;
+      background-color: transparent; } }
 
 .banner-tagline,
 .contact-tagline {
@@ -524,7 +524,7 @@ img {
   float: right;
   font-weight: 900; }
 
-.banner, .portfolio, .main-contact {
+.main-nav, .banner, .portfolio, .main-contact {
   text-align: center; }
 
 .footer:after {

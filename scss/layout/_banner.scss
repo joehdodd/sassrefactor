@@ -10,5 +10,5 @@
 }
 
 .profile-img {
-    max-width: 70%;
+    @include img(70%);
 }

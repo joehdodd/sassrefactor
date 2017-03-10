@@ -12,9 +12,16 @@
     padding: 15px;
 }
 
-.main-nav li {
+.main-nav {
+  @extend %centered;
+    & li {
     background-color: #fff;
     font-weight: 900;
     margin: 5px 15px;
     text-transform: uppercase;
+    @media #{$break-narrow} {
+      display: inline-block;
+      background-color: transparent;
+    }
+  }
 }
