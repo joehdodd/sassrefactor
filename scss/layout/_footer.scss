@@ -10,10 +10,36 @@
         display: none;
     }
     @extend %clearfix;
+    // Media Queries for .footer
+    @media #{$break-narrow} {
+      &-name,
+      &-nav {
+          margin-top: 20px;
+          padding-right: 0px;
+          padding-left: 0px;
+      }
+      &-nav {
+          display: inline-block;
+          float: right;
+          text-transform: uppercase;
+          font-weight: 900;
+      }
+      &-nav li {
+        float: left;
+        padding-right: 1em;
+      }
+      &-nav li:last-child {
+        padding-right: 0;
+      }
+      & {margin-bottom: 30px;}
+    }
 }
 
 .mobile-nav {
     padding-top: 20px;
     float: right;
     font-weight: 900;
+    @media #{$break-narrow} {
+      display: none;
+    }
 }

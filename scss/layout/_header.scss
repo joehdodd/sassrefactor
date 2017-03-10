@@ -2,20 +2,20 @@
     margin-bottom: 20px;
 }
 
-.name a,
-.main-nav a {
+.name {
+    @media #{$break-narrow} {
+      padding-top: 10px;
+    }
+    & a {
     display: block;
     text-align: center;
-}
-
-.main-nav a {
-    padding: 15px;
+    }
 }
 
 .main-nav {
   @extend %centered;
     & li {
-    background-color: #fff;
+    background-color: $white;
     font-weight: 900;
     margin: 5px 15px;
     text-transform: uppercase;
@@ -23,5 +23,10 @@
       display: inline-block;
       background-color: transparent;
     }
+  }
+  & a {
+    @extend %centered;
+    padding: 15px;
+    display: block;
   }
 }

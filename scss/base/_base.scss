@@ -12,7 +12,7 @@ h1,
 h2,
 h3 {
     font-family: 'Lato', sans-serif;
-    color: #999;
+    color: $gray-light;
 }
 
 p,
@@ -23,7 +23,7 @@ span {
 
 a {
     text-decoration: none;
-    color: #484848;
+    color: $color-link-default;
 }
 
 ul {
@@ -32,7 +32,7 @@ ul {
 }
 
 body {
-    background-color: #F8F8F8;
+    background-color: $color-body-background;
 }
 
 

@@ -11,3 +11,9 @@
         font-weight: 900;
     }
 }
+
+@media #{$break-narrow} {
+  .contact-tagline {
+      padding: 25px 125px;
+  }
+}

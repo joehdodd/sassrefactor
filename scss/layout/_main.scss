@@ -4,21 +4,38 @@
     text-transform: uppercase;
     font-size: 1em;
     font-weight: 900;
-    color: #787878;
+    color: $color-text-heading;
 }
 
 .portfolio {
     @extend %centered;
-    background-color: #fff;
+    background-color: $white;
     padding-bottom: 50px;
     &-description {
         line-height: 1.5em;
         margin-top: 0px;
         padding: 16px;
-        color: #808080;
+        color: $color-text-paragraph;
     }
 }
 
 .col {
     padding: 1em;
+    @media #{$break-narrow} {
+      float: left;
+      width: 50%;
+      height: 400px;
+    }
+}
+
+.container {
+  @extend %clearfix;
+  @media #{$break-narrow} {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0 auto;
+  }
+  @media #{$break-wide} {
+    max-width: 1150px;
+  }
 }
