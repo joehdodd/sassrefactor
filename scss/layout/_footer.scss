@@ -3,7 +3,7 @@
     padding-left: 1em;
     margin-bottom: 20px;
     &-name {
-        font-weight: 900;
+        @include text(900);
         float: left;
     }
     &-nav {
@@ -21,8 +21,7 @@
       &-nav {
           display: inline-block;
           float: right;
-          text-transform: uppercase;
-          font-weight: 900;
+          @include text(900, uppercase);
       }
       &-nav li {
         float: left;
@@ -38,7 +37,7 @@
 .mobile-nav {
     padding-top: 20px;
     float: right;
-    font-weight: 900;
+    @include text($weight: 900);
     @media #{$break-narrow} {
       display: none;
     }

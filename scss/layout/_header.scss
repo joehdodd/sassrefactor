@@ -16,8 +16,8 @@
       padding-top: 10px;
     }
     & a {
-    display: block;
-    text-align: center;
+      display: block;
+      @extend %centered;
     }
     @media #{$break-wide} {
       float: left;

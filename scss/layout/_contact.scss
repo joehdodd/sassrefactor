@@ -5,10 +5,9 @@
 
 .contact-links li {
     padding-bottom: 15px;
-
-     & a {
-        padding-left: 15px;
-        font-weight: 900;
+    & a {
+      padding-left: 15px;
+      @include text(900);
     }
 }
 
