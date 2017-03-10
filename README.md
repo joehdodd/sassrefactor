@@ -1,3 +1,3 @@
-# Responsive Layout
+# Sass Refactor
 
-Honing those responsive design skills. Two breakpoints. Lots of love. 
+Refactoring a previous project using the lovely Sass. All Sass development directories are available to view in the files. 
