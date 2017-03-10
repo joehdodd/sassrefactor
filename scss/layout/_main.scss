@@ -8,14 +8,19 @@
 }
 
 .portfolio {
-    text-align: center;
+    @extend %centered;
     background-color: #fff;
     padding-bottom: 50px;
+    &-description {
+        line-height: 1.5em;
+        margin-top: 0px;
+        padding: 16px;
+        color: #808080;
+    }
 }
 
-.portfolio-description {
-    line-height: 1.5em;
-    margin-top: 0px;
-    padding: 16px;
-    color: #808080;
+
+
+.col {
+    padding: 1em;
 }

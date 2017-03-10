@@ -449,6 +449,11 @@ body {
 img {
   max-width: 100%; }
 
+/* ----
+==========================
+      Layout Imports
+==========================
+---- */
 .main-header {
   margin-bottom: 20px; }
 
@@ -465,9 +470,6 @@ img {
   font-weight: 900;
   margin: 5px 15px;
   text-transform: uppercase; }
-
-.banner {
-  text-align: center; }
 
 .banner-tagline,
 .contact-tagline {
@@ -487,42 +489,47 @@ img {
   color: #787878; }
 
 .portfolio {
-  text-align: center;
   background-color: #fff;
   padding-bottom: 50px; }
+  .portfolio-description {
+    line-height: 1.5em;
+    margin-top: 0px;
+    padding: 16px;
+    color: #808080; }
 
-.portfolio-description {
-  line-height: 1.5em;
-  margin-top: 0px;
-  padding: 16px;
-  color: #808080; }
+.col {
+  padding: 1em; }
 
 .main-contact {
-  text-align: center;
   padding: 1em; }
 
 .contact-links li {
   padding-bottom: 15px; }
-
-.contact-links li a {
-  padding-left: 15px;
-  font-weight: 900; }
+  .contact-links li a {
+    padding-left: 15px;
+    font-weight: 900; }
 
 .footer {
   padding-right: 1em;
   padding-left: 1em;
   margin-bottom: 20px; }
-
-.footer-name {
-  font-weight: 900;
-  float: left; }
-
-.footer-nav {
-  display: none; }
+  .footer-name {
+    font-weight: 900;
+    float: left; }
+  .footer-nav {
+    display: none; }
 
 .mobile-nav {
   padding-top: 20px;
   float: right;
   font-weight: 900; }
+
+.banner, .portfolio, .main-contact {
+  text-align: center; }
+
+.footer:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 /*# sourceMappingURL=application.css.map */

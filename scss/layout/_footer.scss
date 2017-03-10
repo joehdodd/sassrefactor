@@ -2,15 +2,14 @@
     padding-right: 1em;
     padding-left: 1em;
     margin-bottom: 20px;
-}
-
-.footer-name {
-    font-weight: 900;
-    float: left;
-}
-
-.footer-nav {
-    display: none;
+    &-name {
+        font-weight: 900;
+        float: left;
+    }
+    &-nav {
+        display: none;
+    }
+    @extend %clearfix;
 }
 
 .mobile-nav {

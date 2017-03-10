@@ -1,13 +1,13 @@
 .main-contact {
-    text-align: center;
+    @extend %centered;
     padding: 1em;
 }
 
 .contact-links li {
     padding-bottom: 15px;
-}
 
-.contact-links li a {
-    padding-left: 15px;
-    font-weight: 900;
+     & a {
+        padding-left: 15px;
+        font-weight: 900;
+    }
 }

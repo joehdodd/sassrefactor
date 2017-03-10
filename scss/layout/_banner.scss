@@ -1,5 +1,5 @@
 .banner {
-    text-align: center;
+    @extend %centered;
 }
 
 .banner-tagline,
