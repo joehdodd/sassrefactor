@@ -4,6 +4,9 @@
     @media #{$break-narrow} {
       margin-bottom: 50px;
     }
+    @media #{$break-wide} {
+      padding: 0 30px;
+    }
 }
 
 .banner-tagline {

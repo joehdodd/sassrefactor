@@ -33,6 +33,9 @@ ul {
 
 body {
     background-color: $color-body-background;
+    @media #{$break-wide} {
+      padding-top: 200px;
+    }
 }
 
 

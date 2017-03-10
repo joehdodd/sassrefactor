@@ -1,5 +1,14 @@
 .main-header {
+    @extend %clearfix;
     margin-bottom: 20px;
+    @media #{$break-wide} {
+      position: fixed;
+      background: #fff;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .4);
+      width: 100%;
+      top: 0;
+      z-index: 1;
+    }
 }
 
 .name {
@@ -10,23 +19,34 @@
     display: block;
     text-align: center;
     }
+    @media #{$break-wide} {
+      float: left;
+      padding-left: 32px;
+    }
 }
 
 .main-nav {
   @extend %centered;
-    & li {
+  & li {
     background-color: $white;
     font-weight: 900;
     margin: 5px 15px;
     text-transform: uppercase;
-    @media #{$break-narrow} {
-      display: inline-block;
-      background-color: transparent;
-    }
+      @media #{$break-narrow} {
+        display: inline-block;
+        background-color: transparent;
+      }
+      @media #{$break-wide} {
+        float: left;
+      }
   }
   & a {
     @extend %centered;
     padding: 15px;
     display: block;
+  }
+  @media #{$break-wide} {
+    float: right;
+    padding-right: 0;
   }
 }

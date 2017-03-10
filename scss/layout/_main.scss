@@ -17,6 +17,9 @@
         padding: 16px;
         color: $color-text-paragraph;
     }
+    @media #{$break-wide} {
+      margin: 0 30px;
+    }
 }
 
 .col {
@@ -25,6 +28,9 @@
       float: left;
       width: 50%;
       height: 400px;
+    }
+    @media #{$break-wide} {
+      width: 33.333%;
     }
 }
 
