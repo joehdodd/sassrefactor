@@ -1,0 +1,41 @@
+/* ----
+==========================
+      Base Styles
+==========================
+---- */
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Lato', sans-serif;
+    color: #999;
+}
+
+p,
+li,
+span {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #484848;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+body {
+    background-color: #F8F8F8;
+}
+
+
+img {
+    max-width: 100%;
+}

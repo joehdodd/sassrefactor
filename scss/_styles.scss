@@ -1,0 +1,177 @@
+/* ----
+==========================
+      Layout Styles
+==========================
+---- */
+
+
+
+
+
+
+
+
+
+
+/* ----
+==========================
+      Layout Containers
+==========================
+---- */
+
+
+.col {
+    padding: 1em;
+}
+
+
+/* ----
+==========================
+     Float Clearfix
+==========================
+---- */
+
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+
+/* ----
+==========================
+     Media Queries
+==========================
+---- */
+
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        padding-left: 1em;
+        padding-right: 1em;
+        margin: 0 auto;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        background-color: transparent;
+    }
+
+    .main-nav {
+        text-align: center;
+    }
+
+    .name {
+        padding-top: 10px;
+    }
+
+    .banner {
+        margin-bottom: 50px;
+    }
+
+    .profile-img {
+        float: right;
+        width: 40%;
+    }
+
+    .banner-tagline {
+        float: left;
+        width: 60%;
+        text-align: left;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        padding: 0 16px 0 0;
+        margin-top: -2px;
+        }
+
+    .col {
+        float: left;
+        width: 50%;
+        height: 400px;
+    }
+
+    .contact-tagline {
+        padding: 25px 125px;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .footer-name,
+    .footer-nav {
+        margin-top: 20px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .footer-nav {
+        display: inline-block;
+        float: right;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    .footer-nav li {
+        float: left;
+        padding-right: 1em;
+    }
+
+    .footer-nav li:last-child {
+        padding-right: 0;
+    }
+
+    .footer {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container {
+        max-width: 1150px;
+    }
+
+    body {
+        padding-top: 200px;
+    }
+
+    .banner {
+        padding: 0 30px;
+    }
+
+    .portfolio {
+        margin: 0 30px;
+    }
+
+    .col {
+        width: 33.333%;
+    }
+
+    .main-header {
+       position: fixed;
+       background: #fff;
+       box-shadow: 0 1px 2px rgba(0, 0, 0, .4);
+       width: 100%;
+       top: 0;
+       z-index: 1;
+    }
+
+    .name {
+        float: left;
+        padding-left: 32px;
+    }
+
+    .main-nav {
+        float: right;
+        padding-right: 0px;
+    }
+
+    .main-nav li {
+        float: left;
+    }
+
+}
