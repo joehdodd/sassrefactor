@@ -29,9 +29,8 @@
   @extend %centered;
   & li {
     background-color: $white;
-    font-weight: 900;
     margin: 5px 15px;
-    text-transform: uppercase;
+    @include text($weight: 900, $transform: uppercase);
       @media #{$break-narrow} {
         display: inline-block;
         background-color: transparent;

@@ -7,7 +7,7 @@
     padding-bottom: 15px;
     & a {
       padding-left: 15px;
-      @include text(900);
+      @include text($weight: 900);
     }
 }
 

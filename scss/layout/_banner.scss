@@ -14,8 +14,7 @@
     float: left;
     width: 60%;
     text-align: left;
-    font-size: 1.25rem;
-    line-height: 2rem;
+    @include text($size: 1.25rem);
     padding: 0 16px 0 0;
     margin-top: -15px;
   }
@@ -23,7 +22,7 @@
 
 .banner-tagline,
 .contact-tagline {
-    line-height: 1.5em;
+    @include text($l-height: 1.5em);
     padding: 15px;
     color: $color-text-tagline;
 }

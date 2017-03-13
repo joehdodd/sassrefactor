@@ -476,8 +476,8 @@ img {
 
 .main-nav li {
   background-color: #fff;
-  font-weight: 900;
   margin: 5px 15px;
+  font-weight: 900;
   text-transform: uppercase; }
   @media (min-width: 768px) {
     .main-nav li {
@@ -507,7 +507,6 @@ img {
     width: 60%;
     text-align: left;
     font-size: 1.25rem;
-    line-height: 2rem;
     padding: 0 16px 0 0;
     margin-top: -15px; } }
 
@@ -527,7 +526,6 @@ img {
 .section-heading {
   padding-top: 40px;
   padding-bottom: 20px;
-  text-transform: uppercase;
   font-size: 1em;
   font-weight: 900;
   color: #787878; }
@@ -537,9 +535,9 @@ img {
   padding-bottom: 50px; }
   .portfolio-description {
     line-height: 1.5em;
+    color: #808080;
     margin-top: 0px;
-    padding: 16px;
-    color: #808080; }
+    padding: 16px; }
   @media (min-width: 1024px) {
     .portfolio {
       margin: 0 30px; } }
@@ -571,7 +569,7 @@ img {
   padding-bottom: 15px; }
   .contact-links li a {
     padding-left: 15px;
-    font-size: 900; }
+    font-weight: 900; }
 
 @media (min-width: 768px) {
   .contact-tagline {
@@ -581,7 +579,7 @@ img {
   padding-left: 1em;
   margin-bottom: 20px; }
   .footer-name {
-    font-size: 900;
+    font-weight: 900;
     float: left; }
   .footer-nav {
     display: none; }
@@ -593,8 +591,8 @@ img {
     .footer-nav {
       display: inline-block;
       float: right;
-      font-size: 900;
-      line-height: uppercase; }
+      font-weight: 900;
+      text-transform: uppercase; }
     .footer-nav li {
       float: left;
       padding-right: 1em; }
